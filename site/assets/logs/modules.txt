@@ -1,0 +1,56 @@
+2017-08-24 20:32:53	?	?	Saved module 'SystemUpdater' config data
+2017-08-24 20:32:55	?	?	Saved module info caches
+2017-08-24 20:32:55	guest	http://localhost/hedrons/http404/	Saved module info caches
+2017-08-24 20:32:55	guest	http://localhost/hedrons/http404/	Installed module 'ProcessRecentPages'
+2017-08-24 20:32:55	guest	http://localhost/hedrons/http404/	Saved module info caches
+2017-08-24 20:32:55	guest	http://localhost/hedrons/http404/	Saved module 'SystemUpdater' config data
+2017-08-24 20:32:55	guest	http://localhost/hedrons/http404/	Saved module 'AdminThemeDefault' config data
+2017-08-24 20:32:58	guest	http://localhost/hedrons/manage/login/	Saved module info caches
+2017-08-24 20:32:58	guest	http://localhost/hedrons/manage/login/	Installed module 'ProcessLogger'
+2017-08-24 20:32:58	guest	http://localhost/hedrons/manage/login/	Saved module info caches
+2017-08-24 20:32:58	guest	http://localhost/hedrons/manage/login/	Installed module 'InputfieldIcon'
+2017-08-24 20:32:58	guest	http://localhost/hedrons/manage/login/	Saved module info caches
+2017-08-24 20:32:58	guest	http://localhost/hedrons/manage/login/	Saved module 'SystemUpdater' config data
+2017-08-24 20:33:04	guest	http://localhost/hedrons/manage/login/	Saved module 'SystemUpdater' config data
+2017-08-24 20:33:04	?	?	Saved module 'SystemUpdater' config data
+2017-08-24 20:33:05	?	?	Saved module info caches
+2017-08-24 20:33:05	superman	http://localhost/hedrons/manage/?login=1	Saved module 'SystemUpdater' config data
+2017-08-24 20:33:05	superman	http://localhost/hedrons/manage/page/?login=1	Saved module 'SystemUpdater' config data
+2017-08-24 20:33:05	?	?	Saved module info caches
+2017-08-24 20:33:05	?	?	Saved module 'SystemUpdater' config data
+2017-08-24 20:33:05	?	?	Saved module info caches
+2017-08-24 20:33:05	superman	http://localhost/hedrons/manage/page/list/?id=1&render=JSON&start=0&lang=0&open=undefined&mode=actions	Saved module 'SystemUpdater' config data
+2017-08-24 20:46:27	superman	http://localhost/hedrons/manage/module/	Saved module 'FieldtypeRepeater' config data
+2017-08-24 20:46:27	superman	http://localhost/hedrons/manage/module/	Installed module 'InputfieldRepeater'
+2017-08-24 20:46:27	superman	http://localhost/hedrons/manage/module/	Installed module 'FieldtypeRepeater'
+2017-08-24 20:46:27	superman	http://localhost/hedrons/manage/module/	Saved module info caches
+2017-08-24 20:46:28	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeRepeater	Saved module 'FieldtypeRepeater' config data
+2017-08-24 20:46:29	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeRepeater&collapse_info=1	Saved module 'FieldtypeRepeater' config data
+2017-08-24 20:47:19	superman	http://localhost/hedrons/manage/module/?reset=1	Saved module info caches
+2017-08-24 20:47:28	superman	http://localhost/hedrons/manage/module/	Installed module 'JqueryDataTables'
+2017-08-24 20:47:29	superman	http://localhost/hedrons/manage/module/	Saved module info caches
+2017-08-24 20:47:31	superman	http://localhost/hedrons/manage/module/edit?name=JqueryDataTables	Saved module 'JqueryDataTables' config data
+2017-08-24 20:47:32	superman	http://localhost/hedrons/manage/module/edit?name=JqueryDataTables&collapse_info=1	Saved module 'JqueryDataTables' config data
+2017-08-24 20:47:36	superman	http://localhost/hedrons/manage/module/edit?name=JqueryDataTables&collapse_info=1	Saved module 'JqueryDataTables' config data
+2017-08-24 20:47:42	superman	http://localhost/hedrons/manage/module/	Installed module 'ModulesManager'
+2017-08-24 20:47:42	superman	http://localhost/hedrons/manage/module/	Saved module info caches
+2017-08-24 20:47:44	superman	http://localhost/hedrons/manage/module/edit?name=ModulesManager	Saved module 'ModulesManager' config data
+2017-08-24 20:47:46	superman	http://localhost/hedrons/manage/module/edit?name=ModulesManager&collapse_info=1	Saved module 'ModulesManager' config data
+2017-08-24 20:48:14	superman	http://localhost/hedrons/manage/module/	Installed module 'FieldtypeOptions'
+2017-08-24 20:48:14	superman	http://localhost/hedrons/manage/module/	Saved module info caches
+2017-08-24 20:48:15	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeOptions	Saved module 'FieldtypeOptions' config data
+2017-08-24 20:48:17	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeOptions&collapse_info=1	Saved module 'FieldtypeOptions' config data
+2017-08-24 20:48:54	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503625734254	Saved module info caches
+2017-08-24 20:48:57	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503625737248	Saved module info caches
+2017-08-24 20:49:02	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503625742693	Saved module info caches
+2017-08-25 19:57:06	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503709023626	Saved module info caches
+2017-08-25 19:57:18	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_somatonic_ColorPicker_zipball_master&class=FieldtypeColorPicker&modal=1	Saved module info caches
+2017-08-25 19:57:19	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_somatonic_ColorPicker_zipball_master&class=FieldtypeColorPicker&modal=1	Saved module info caches
+2017-08-25 19:57:21	superman	http://localhost/hedrons/manage/module/?modal=1	Installed module 'InputfieldColorPicker'
+2017-08-25 19:57:21	superman	http://localhost/hedrons/manage/module/?modal=1	Installed module 'FieldtypeColorPicker'
+2017-08-25 19:57:22	superman	http://localhost/hedrons/manage/module/?modal=1	Saved module info caches
+2017-08-25 19:57:23	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeColorPicker&collapse_info=1&modal=1	Saved module 'FieldtypeColorPicker' config data
+2017-08-25 19:57:24	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeColorPicker&collapse_info=1&modal=1	Saved module 'FieldtypeColorPicker' config data
+2017-08-25 19:57:26	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/	Saved module info caches
+2017-08-25 19:57:31	superman	http://localhost/hedrons/manage/setup/modulesmanager/?reset=1	Saved module info caches
+2017-08-25 19:57:40	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503709060290	Saved module info caches

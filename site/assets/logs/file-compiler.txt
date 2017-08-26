@@ -1,0 +1,5 @@
+2017-08-24 20:47:19	superman	http://localhost/hedrons/manage/module/?reset=2	Compiled file: /site/modules/JqueryDataTables-master/JqueryDataTables.module
+2017-08-24 20:47:20	superman	http://localhost/hedrons/manage/module/?reset=2	Compiled file: /site/modules/somatonic-ModulesManager-6ddf1f8/ModulesManager.module
+2017-08-24 20:47:20	superman	http://localhost/hedrons/manage/module/?reset=2	Compiled file: /site/modules/somatonic-ModulesManager-6ddf1f8/ModulesManagerNotification.module
+2017-08-25 19:57:20	superman	http://localhost/hedrons/manage/setup/modulesmanager/install/?class=FieldtypeColorPicker&modal=1	Compiled file: /site/modules/FieldtypeColorPicker/FieldtypeColorPicker.module
+2017-08-25 19:57:20	superman	http://localhost/hedrons/manage/setup/modulesmanager/install/?class=FieldtypeColorPicker&modal=1	Compiled file: /site/modules/FieldtypeColorPicker/InputfieldColorPicker.module

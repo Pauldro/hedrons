@@ -1,0 +1,3 @@
+$(function() {
+    $('#topics-table').DataTable();
+});
