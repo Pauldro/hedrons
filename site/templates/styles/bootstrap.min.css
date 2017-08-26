@@ -4010,7 +4010,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   border-radius: 0 0 0 0;
 }
 .nav-tabs > li > a:hover {
@@ -4019,11 +4019,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #333333;
-  background-color: #f5f1ed;
-  border: 1px solid #333333;
-  border-bottom-color: transparent;
-  cursor: default;
+    background: #9b51b8;
+    color: #f5f1ed;
+    border-bottom-color: transparent;
+    cursor: default;
 }
 .nav-tabs.nav-justified {
   width: 100%;

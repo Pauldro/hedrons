@@ -95,7 +95,7 @@
 	a.navbar-brand.slide-menu-open {height: auto;}
 	a.navbar-brand.slide-menu-open:hover { background: #5762d5; color: #f8f8f8; }
 	a.slide-menu-open.menu-open { background: #242F40; color: #f8f8f8; }
-	#slide-menu .active {background: #7A3D7A;}
+	#slide-menu .active {background: #9b51b8;}
 
 	.menu-brand {color: #808080; font-size: 25px;}
 
@@ -108,6 +108,7 @@
 	 @media only screen and (max-width: 800px) {
 		.article-text{padding-left: 20px; padding-right: 20px;}
 	 }
+	 .article-text .img-responsive {display: inline-block;}
  /*==============================================================
     POST LIST STYLES
  =============================================================*/
@@ -120,12 +121,13 @@
 	.post-list .post .post-title .h1, .post-list .post .post-title .h2,
 	.post-list .post .post-title .h3, .post-list .post .post-title .h4,
 	.post-list .post .post-title .h5, .post-list .post .post-title .h6 {margin-top: 0px;}
-	.post-title {padding: 15px; color: #000; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,.2)}
+	.post-title {padding: 15px 15px 5px 15px; color: #000; background-color: #fff; box-shadow: 0 0 10px rgba(0,0,0,.2)}
 		.post-title a { color: #000;}
 /*==============================================================
    PODCAST STYLES
 =============================================================*/
 	.podcast-post {background: #333; color:#f5f1ed;}
+	.podcast-img-div {max-height: 400px; overflow: hidden;}
 	.well.podcast-post{margin-bottom: 0px;}
 
 /* =============================================================

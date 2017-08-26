@@ -1,0 +1,552 @@
+<?php
+
+/**
+ * AudioMP3 module
+ *
+ * This module provides to integrate Flash-MP3-Players in your pages.
+ *
+ * made by Christoph Thelen
+ * Copyright (c) 2013, Christoph Thelen
+ * http://www.kixe.de
+ * 
+ * Flashplayer
+ * Copyright and License: http://flash-mp3-player.net/
+ * 
+ * ProcessWire 2.x 
+ * Copyright (C) 2010 by Ryan Cramer 
+ * Licensed under GNU/GPL v2, see LICENSE.TXT
+ * 
+ * http://www.processwire.com
+ * http://www.ryancramer.com
+ * 
+ * 
+ * changelog
+ * 14.06.13 add error messages to the install routine
+ * 15.06.13 hook added to $page
+ * 20.06.13 message added to the uninstall routine
+ * 25.09.13 some configuration-options added (multiplayer)
+ * 09.10.13 multisite support (path to swf-player/ site-folder)
+ * 14.10.13 all phrases translatable
+ * 14.10.13 translation for german available
+ * 21.10.13 simplified color setting, allowed input now: with/without leading '#', 3 or 6 digit hex-code, Colornames allowed
+ * 21.10.13 for better accessibility: alternative links directly to the mp3-files included
+ * 19.03.16 tested in PW 3.0.9, small debugging, better uninstall process preventing ugly error messages
+ */
+
+class Audio_MP3 extends \ProcessWire\Process implements \ProcessWire\ConfigurableModule {
+
+	/**
+	 *
+	 *
+	 * @return array
+	 *
+	 */
+	public static function getModuleInfo() {
+
+		return array(
+			'title' => 'Audio MP3', 
+			'version' => 120, 
+			'summary' => \ProcessWire\__('Creates a Field to store MP3-Audiofiles and generates a Frontend-Player which is extensively configurable in the Module settings.'),
+			'author' => 'Christoph Thelen',
+			'singular' => true, 
+			'autoload' => true, 
+			'href' => 'http://modules.processwire.com/modules/audio-mp3/'
+			);
+	}
+
+	protected static $configDefaults = array(
+		'width'=>360,
+		'height'=>30,
+		'volume'=>50,
+		'showstop'=>1,
+		'showinfo'=>1,
+		'showvolume'=>1,
+		'showloading'=>'always',
+		'buttonwidth'=>30,
+		'volumewidth'=>60,
+		'volumeheight'=>10,
+		'loadingcolor'=>'ffff75',
+		'sliderovercolor'=>'eeee00',
+		'buttonovercolor'=>'ff2936',
+		'buttoncolor'=>'0055ff',
+		'slidercolor1'=>'0055ff',
+		'slidercolor2'=>'0055ff',
+		'playlistcolor'=>'0055ff',//multiplayer only
+		'currentmp3color'=>'ffffff'// multiplayer only
+	); 
+
+	/**
+	 * Data as used by the get/set functions
+	 *
+	 */
+	protected $data = array();
+
+	/**
+	 * Set our configuration defaults
+	 *
+	 */
+	public function __construct() {
+		foreach(self::$configDefaults as $key => $value) {
+			$this->set($key, $value); 
+		}
+	}	
+
+	/**
+	 * Module configuration screen
+	 *
+	 */
+	public static function getModuleConfigInputfields(array $data) {
+
+		foreach(self::$configDefaults as $key => $value) {
+			if(!isset($data[$key])||$data[$key]=="") $data[$key] = $value;
+		}
+
+		unset($data['cacheClear']);
+		$inputfields = new \ProcessWire\InputfieldWrapper();
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldInteger'); 
+		$f->attr('name', 'width');
+		$f->attr('value', $data['width']); 
+		$f->attr('columnWidth', 33); 
+		$f->label = \ProcessWire\__('Player Width'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldInteger'); 
+		$f->attr('name', 'height');
+		$f->attr('value', $data['height']); 
+		$f->attr('columnWidth', 33); 
+		$f->label = \ProcessWire\__('Player Height'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldInteger'); 
+		$f->attr('name', 'volume');
+		$f->attr('value', $data['volume']); 
+		$f->attr('columnWidth', 33); 
+		$f->label = \ProcessWire\__('Volume'); 
+		$f->description = \ProcessWire\__('Choose a Value between 0 and 100'); 
+		$inputfields->add($f);
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldCheckbox'); 
+		$f->attr('name', 'showstop');
+		$f->attr('value', 1); 
+		if($data['showstop']) $f->attr('checked', 'checked'); 
+		$f->label = \ProcessWire\__('Show Stop Button'); 
+		$f->description = \ProcessWire\__(''); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldCheckbox'); 
+		$f->attr('name', 'showinfo');
+		$f->attr('value', 1); 
+		if($data['showinfo']) $f->attr('checked', 'checked'); 
+		$f->label = \ProcessWire\__('Show Info Button'); 
+		$f->description = \ProcessWire\__(''); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldCheckbox'); 
+		$f->attr('name', 'showvolume');
+		$f->attr('value', 1); 
+		if($data['showvolume']) $f->attr('checked', 'checked'); 
+		$f->label = \ProcessWire\__('Show Volume Slider'); 
+		$f->description = \ProcessWire\__(''); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldInteger'); 
+		$f->attr('name', 'buttonwidth');
+		$f->attr('value', $data['buttonwidth']); 
+		$f->label = \ProcessWire\__('Button Width'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldInteger'); 
+		$f->attr('name', 'volumewidth');
+		$f->attr('value', $data['volumewidth']); 
+		$f->label = \ProcessWire\__('Volume Slider Width'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldInteger'); 
+		$f->attr('name', 'volumeheight');
+		$f->attr('value', $data['volumeheight']); 
+		$f->label = \ProcessWire\__('Volume Slider Height'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'buttoncolor');
+		$f->attr('value', $data['buttoncolor']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Button Color'); 
+		$f->description = \ProcessWire\__('Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'slidercolor1');
+		$f->attr('value', $data['slidercolor1']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Slider Color Top'); 
+		$f->description = \ProcessWire\__('Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'slidercolor2');
+		$f->attr('value', $data['slidercolor2']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Slider Color Bottom'); 
+		$f->description = \ProcessWire\__('Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'loadingcolor');
+		$f->attr('value', $data['loadingcolor']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Color of Loading Bar'); 
+		$f->description = \ProcessWire\__('Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'sliderovercolor');
+		$f->attr('value', $data['sliderovercolor']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Slider Over Color'); 
+		$f->description = \ProcessWire\__('Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'buttonovercolor');
+		$f->attr('value', $data['buttonovercolor']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Button Over Color'); 
+		$f->description = \ProcessWire\__('Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'playlistcolor');
+		$f->attr('value', $data['playlistcolor']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->label = \ProcessWire\__('Playlist Backgroundolor'); 
+		$f->description = \ProcessWire\__('Backgroundcolor of the Playlist, displayed in Multiplayer only (2 or more titles). Use Color Names or hexadecimal color specification'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldText'); 
+		$f->attr('name', 'currentmp3color');
+		$f->attr('value', $data['currentmp3color']); 
+		$f->attr('size', 20); 
+		$f->attr('maxlength', 21);
+		$f->attr('placeholder', 'color');
+		$f->description = \ProcessWire\__('Color for the current title, displayed in Multiplayer only (2 or more titles). Use Color Names or hexadecimal color specification'); 
+		$f->label = \ProcessWire\__('Current MP3 Color'); 
+		$inputfields->add($f); 
+
+		$f = \ProcessWire\wire('modules')->get('InputfieldSelect'); 
+		$f->attr('name', \ProcessWire\__('showloading'));
+		$f->addOption(\ProcessWire\__('autohide'),null, ($data['showloading']=='autohide')?array('selected'=>'selected'):null); 
+		$f->addOption(\ProcessWire\__('always'),null, ($data['showloading']=='always')?array('selected'=>'selected'):null); 
+		$f->addOption(\ProcessWire\__('never'),null, ($data['showloading']=='never')?array('selected'=>'selected'):null); 
+		$f->label = \ProcessWire\__('Show Loading Process'); 
+		$inputfields->add($f); 
+
+		return $inputfields;
+	}
+
+	public function init() {
+		$this->addHookProperty('Page::player', $this, 'render');
+	}
+
+    protected function render($event) {
+  		$page = $event->object;
+
+		#module installed?
+		if ($this->page->audio) {
+			$audio_files = $this->page->audio;
+		} else {
+ 			throw new \ProcessWire\WireException('Field "Audio" to store the mp3-files doesn\'t exist! The field is usually generated by the module. If you have accidentally deleted it, the module must be reinstalled.');
+			exit;
+		}
+		
+		#how many files do we have?
+		switch ($audio_files->count()) {
+			#exit if no file is stored
+			case 0:
+			exit;
+
+			case 1:
+			#set standard player
+			$playersize = "maxi";
+			$this->data['height'] -= 15;
+			break;
+			
+			default:
+			#set multi-player
+			$playersize = "multi";
+			#basic-height
+			$this->data['height'] = 30;
+  			break;
+
+		}
+				
+		$title_lang = \ProcessWire\__('internal link to audio mp3-file');
+		$playlist = array();
+		$titles = array();
+		$alt_player = '';
+		#get the stored mp3-files
+		foreach ($audio_files as $key => $value) {
+			$playlist[$key] = $value->url;
+			$titles[$key] = ($value->description)?$value->description:$value;
+			$this->data['height'] += 15;
+			#accesibility code
+			$alt_player .= "<li><a title=\"$title_lang | {$titles[$key]}\" href=\"{$value->url}\">{$titles[$key]}</a></li>\n\t\t\t\t";
+		}
+	 
+ 		#playlist string-prefix
+		$playlist = implode('|',$playlist);
+		$playlist = "mp3=".$playlist;
+		$titles = implode('|',$titles);
+
+		#width and height for the object-tag
+		$height = $this->data['height'];
+ 		$width = $this->data['width'];
+ 		$string = $this->createParameterString($this->data);
+  		
+ 		$path = $this->fuel('config')->urls->$this;
+ 		$embedCode = "\n
+  		<object title=\"".$this->_('Audio MP3 Player | internal links to mp3-files included')."\" id=\"mp3_player\" type=\"application/x-shockwave-flash\" data=\"".$path."player_mp3_$playersize.swf\"  width=\"$width\" height=\"$height\">
+  		    <ul>
+				$alt_player</ul>
+ 		   	<param name=\"movie\" value=\"".$path."player_mp3_$playersize.swf\" />
+    		<param name=\"wmode\" value= \"transparent\"/>
+			<param name=\"FlashVars\" value=\"$playlist$string&amp;title=$titles\" />
+		</object>";
+	
+		$event->return = array('code'=>$embedCode, 'title'=>$titles);
+
+	}
+
+	protected function createParameterString($data) {
+		$string = '';
+		foreach ($data as $key => $value) {
+			if (strstr($key,'color')) {
+				if ($this->colortranslator($value) != false) $value = $this->colortranslator($value);
+				else $value = self::$configDefaults[$key]; //use default-color-setting if custom setting is invalid
+				//else $this->message('foo');
+			}
+			$string .= "&amp;$key=$value";
+		}
+		return $string;
+	}
+
+	protected function colortranslator($in) {
+		$colornames = array('aliceblue'=>'f0f8ff',
+		'antiquewhite'=>'faebd7',
+		'aqua'=>'00ffff',
+		'aquamarine'=>'7fffd4',
+		'azure'=>'f0ffff',
+		'beige'=>'f5f5dc',
+		'bisque'=>'ffe4c4',
+		'black'=>'000000',
+		'blanchedalmond'=>'ffebcd',
+		'blue'=>'0000ff',
+		'blueviolet'=>'8a2be2',
+		'brown'=>'a52a2a',
+		'burlywood'=>'deb887',
+		'cadetblue'=>'5f9ea0',
+		'chartreuse'=>'7fff00',
+		'chocolate'=>'d2691e',
+		'coral'=>'ff7f50',
+		'cornflowerblue'=>'6495ed',
+		'cornsilk'=>'fff8dc',
+		'crimson'=>'dc143c',
+		'cyan'=>'00ffff',
+		'darkblue'=>'00008b',
+		'darkcyan'=>'008b8b',
+		'darkgoldenrod'=>'b8860b',
+		'darkgreen'=>'006400',
+		'darkgrey'=>'a9a9a9',
+		'darkkhaki'=>'bdb76b',
+		'darkmagenta'=>'8b008b',
+		'darkolivegreen'=>'556b2f',
+		'darkorange'=>'ff8c00',
+		'darkorchid'=>'9932cc',
+		'darkred'=>'8b0000',
+		'darksalmon'=>'e9967a',
+		'darkseagreen'=>'8fbc8f',
+		'darkslateblue'=>'483d8b',
+		'darkslategrey'=>'2f4f4f',
+		'darkturquoise'=>'00ced1',
+		'darkviolet'=>'9400d3',
+		'deeppink'=>'ff1493',
+		'deepskyblue'=>'00bfff',
+		'dimgrey'=>'696969',
+		'dodgerblue'=>'1e90ff',
+		'firebrick'=>'b22222',
+		'floralwhite'=>'fffaf0',
+		'forestgreen'=>'228b22',
+		'fuchsia'=>'ff00ff',
+		'gainsboro'=>'dcdcdc',
+		'ghostwhite'=>'f8f8ff',
+		'gold'=>'ffd700',
+		'goldenrod'=>'daa520',
+		'gray '=>'808080',
+		'green'=>'008000',
+		'greenyellow'=>'adff2f',
+		'grey'=>'808080',
+		'honeydew'=>'f0fff0',
+		'hotpink'=>'ff69b4',
+		'indianred'=>'cd5c5c',
+		'indigo'=>'4b0082',
+		'ivory'=>'fffff0',
+		'khaki'=>'f0e68c',
+		'lavender'=>'e6e6fa',
+		'lavenderblush'=>'fff0f5',
+		'lawngreen'=>'7cfc00',
+		'lemonchiffon'=>'fffacd',
+		'lightblue'=>'add8e6',
+		'lightcoral'=>'f08080',
+		'lightcyan'=>'e0ffff',
+		'lightgoldenrodyellow'=>'fafad2',
+		'lightgray'=>'d3d3d3',
+		'lightgreen'=>'90ee90',
+		'lightgrey'=>'d3d3d3',
+		'lightpink'=>'ffb6c1',
+		'lightsalmon'=>'ffa07a',
+		'lightseagreen'=>'20b2aa',
+		'lightskyblue'=>'87cefa',
+		'lightslategrey'=>'778899',
+		'lightsteelblue'=>'b0c4de',
+		'lightyellow'=>'ffffe0',
+		'lime'=>'00ff00',
+		'limegreen'=>'32cd32',
+		'linen'=>'faf0e6',
+		'magenta'=>'ff00ff',
+		'maroon'=>'800000',
+		'mediumaquamarine'=>'66cdaa',
+		'mediumblue'=>'0000cd',
+		'mediumorchid'=>'ba55d3',
+		'mediumpurple'=>'9370db',
+		'mediumseagreen'=>'3cb371',
+		'mediumslateblue'=>'7b68ee',
+		'mediumspringgreen'=>'00fa9a',
+		'mediumturquoise'=>'48d1cc',
+		'mediumvioletred'=>'c71585',
+		'midnightblue'=>'191970',
+		'mintcream'=>'f5fffa',
+		'mistyrose'=>'ffe4e1',
+		'moccasin'=>'ffe4b5',
+		'navajowhite'=>'ffdead',
+		'navy'=>'000080',
+		'oldlace'=>'fdf5e6',
+		'olive'=>'808000',
+		'olivedrab '=>'6b8e23',
+		'orange'=>'ffa500',
+		'orangered'=>'ff4500',
+		'orchid'=>'da70d6',
+		'palegoldenrod'=>'eee8aa',
+		'palegreen'=>'98fb98',
+		'paleturquoise'=>'afeeee',
+		'palevioletred'=>'db7093',
+		'papayawhip'=>'ffefd5',
+		'peachpuff'=>'ffdab9',
+		'peru'=>'cd853f',
+		'pink'=>'ffc0cb',
+		'plum'=>'dda0dd',
+		'powderblue'=>'b0e0e6',
+		'purple'=>'800080',
+		'red'=>'ff0000',
+		'rosybrown'=>'bc8f8f',
+		'royalblue'=>'4169e1',
+		'saddlebrown'=>'8b4513',
+		'salmon'=>'fa8072',
+		'sandybrown'=>'f4a460',
+		'seagreen'=>'2e8b57',
+		'seashell'=>'fff5ee',
+		'sienna'=>'a0522d',
+		'silver'=>'c0c0c0',
+		'skyblue'=>'87ceeb',
+		'slateblue'=>'6a5acd',
+		'slategrey'=>'708090',
+		'snow'=>'fffafa',
+		'springgreen'=>'00ff7f',
+		'steelblue'=>'4682b4',
+		'tan'=>'d2b48c',
+		'teal'=>'008080',
+		'thistle'=>'d8bfd8',
+		'tomato'=>'ff6347',
+		'turquoise'=>'40e0d0',
+		'violet'=>'ee82ee',
+		'wheat'=>'f5deb3',
+		'white'=>'ffffff',
+		'whitesmoke'=>'f5f5f5',
+		'yellow'=>'ffff00',
+		'yellowgreen'=>'9acd32');
+		if (1 === preg_match('@^#?(([a-f0-9]){3}){1,2}$@i',$in)) {
+			if (substr($in,0,1) == '#') $in = substr($in,1);
+			if (strlen($in) == 3) $in = $in[0].$in[0].$in[1].$in[1].$in[2].$in[2];
+			return $in;
+		}
+		elseif (array_key_exists($in, $colornames)) return $colornames[$in];
+		else return false;
+	}
+
+	/**
+     *
+     * install routine
+     */
+   
+    public function ___install() {
+ 
+ 		if($this->fields->get('audio')) {
+			throw new \ProcessWire\WireException("There is already a field installed called 'audio'. To install this modul you have to delete or rename the existing 'audio' field.");
+			exit;
+		}
+
+ 		$path = $this->fuel('config')->paths->$this;
+ 		if(!file_exists($path.'player_mp3_maxi.swf')||!file_exists($path.'player_mp3_multi.swf')) {
+ 			throw new \ProcessWire\WireException('Files missing. Before Installing you have to put the two Flash-MP3-players in the folder *Audio_MP3* Download from here: http://flash-mp3-player.net/players/');
+			exit;
+		}
+
+        $field_audio = new \ProcessWire\Field();
+        $field_audio->type = $this->modules->get("FieldtypeFile");
+        $field_audio->name = 'audio';
+        $field_audio->description = $this->_('Upload your mp3 or mp3-zip files via drag and drop. Define an alternative title in the Description-Field. Default title is the name of the file.');
+        $field_audio->label = $this->_('MP3 Audio File');
+        $field_audio->extensions = 'mp3';
+		$field_audio->columnWidth = 100;//in percent, default setting: 100
+		$field_audio->unzip = 1;// unzip archives automatically
+		$field_audio->collapsed =0;
+        $field_audio->size = 0;
+        $field_audio->maxlength = 0;
+        $field_audio->save();
+
+    }
+
+    /**
+     *
+     * uninstall routine
+     */
+    public function ___uninstall() {
+ 
+       	$fields = \ProcessWire\wire('fields');
+		if ($fields->get('audio')) {
+			try {
+	        	$fields->delete($fields->get('audio'));
+	        }
+	        catch (Exception $e) {
+	        	$this->error($e,16);
+	        	$this->warning('The field \'audio\' could not be deleted by modules uninstall process. Further information in error log.');
+	        }
+		} else {
+		$this->message('The Module has been uninstalled even though the field \'audio\' (generated by the Module) could not be found.');
+		}
+	}	
+}

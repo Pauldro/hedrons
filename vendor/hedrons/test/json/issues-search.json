@@ -1,0 +1,226 @@
+{
+    "error": "OK",
+    "limit": 10,
+    "offset": 0,
+    "number_of_page_results": 10,
+    "number_of_total_results": 7197,
+    "status_code": 1,
+    "results": [
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-607132/",
+            "cover_date": null,
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/5941231-bat7.jpg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/5941231-bat7.jpg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/5941231-bat7.jpg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/5941231-bat7.jpg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/5941231-bat7.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/5941231-bat7.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/5941231-bat7.jpg"
+            },
+            "issue_number": "7",
+            "name": "Batman & batman",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-97868/",
+                "id": 97868,
+                "name": "Batman Presents",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-presents/4050-97868/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-399968/",
+            "cover_date": "2012-07-31",
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/3014116-7536342555-BATMA.jpg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/3014116-7536342555-BATMA.jpg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/3014116-7536342555-BATMA.jpg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/3014116-7536342555-BATMA.jpg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/3014116-7536342555-BATMA.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/3014116-7536342555-BATMA.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/3014116-7536342555-BATMA.jpg"
+            },
+            "issue_number": "1",
+            "name": "Batman",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-60760/",
+                "id": 60760,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-60760/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-470689/",
+            "cover_date": "2010-09-30",
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/4228945-8018435878-batkn.jpg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/4228945-8018435878-batkn.jpg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/4228945-8018435878-batkn.jpg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/4228945-8018435878-batkn.jpg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/4228945-8018435878-batkn.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4228945-8018435878-batkn.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/4228945-8018435878-batkn.jpg"
+            },
+            "issue_number": "38",
+            "name": "Batman: Renacido",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-78243/",
+                "id": 78243,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-78243/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-470688/",
+            "cover_date": "2010-08-31",
+            "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/4228946-6969753160-bat37.jpg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/4228946-6969753160-bat37.jpg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/4228946-6969753160-bat37.jpg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/4228946-6969753160-bat37.jpg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/4228946-6969753160-bat37.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4228946-6969753160-bat37.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/4228946-6969753160-bat37.jpg"
+        },
+            "issue_number": "37",
+            "name": "Batman: Renacido",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-78243/",
+                "id": 78243,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-78243/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-470686/",
+            "cover_date": "2010-06-30",
+            "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/4228948-0320821410-batro.jpg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/4228948-0320821410-batro.jpg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/4228948-0320821410-batro.jpg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/4228948-0320821410-batro.jpg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/4228948-0320821410-batro.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4228948-0320821410-batro.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/4228948-0320821410-batro.jpg"
+        },
+            "issue_number": "35",
+            "name": "Batman: Renacido",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-78243/",
+                "id": 78243,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-78243/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-470684/",
+            "cover_date": "2010-04-30",
+            "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/4228848-8641463641-Batma.jpg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/4228848-8641463641-Batma.jpg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/4228848-8641463641-Batma.jpg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/4228848-8641463641-Batma.jpg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/4228848-8641463641-Batma.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4228848-8641463641-Batma.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/4228848-8641463641-Batma.jpg"
+        },
+            "issue_number": "33",
+            "name": "Batman: Renacido",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-78243/",
+                "id": 78243,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-78243/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-470687/",
+            "cover_date": "2010-07-31",
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/4228947-8709329551-batro.jpg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/4228947-8709329551-batro.jpg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/4228947-8709329551-batro.jpg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/4228947-8709329551-batro.jpg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/4228947-8709329551-batro.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4228947-8709329551-batro.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/4228947-8709329551-batro.jpg"
+            },
+            "issue_number": "36",
+            "name": "Batman: Renacido",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-78243/",
+                "id": 78243,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-78243/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-470685/",
+            "cover_date": "2010-04-30",
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/4228949-9083078161-baty..jpg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/4228949-9083078161-baty..jpg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/4228949-9083078161-baty..jpg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/4228949-9083078161-baty..jpg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/4228949-9083078161-baty..jpg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/4228949-9083078161-baty..jpg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/4228949-9083078161-baty..jpg"
+            },
+            "issue_number": "34",
+            "name": "Batman: Renacido",
+                "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-78243/",
+                "id": 78243,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-78243/"
+            },
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-111970/",
+            "cover_date": "2007-07-01",
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/1973911-batman__1940__666.jpeg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/1973911-batman__1940__666.jpeg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/1973911-batman__1940__666.jpeg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/1973911-batman__1940__666.jpeg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/1973911-batman__1940__666.jpeg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/1973911-batman__1940__666.jpeg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/1973911-batman__1940__666.jpeg"
+            },
+            "issue_number": "666",
+            "name": "Batman in Bethlehem",
+            "volume": {},
+            "resource_type": "issue"
+        },
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-120815/",
+            "cover_date": "1952-08-01",
+            "image": {
+                "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/267292-796-120815-1-batman.jpg",
+                "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/267292-796-120815-1-batman.jpg",
+                "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/267292-796-120815-1-batman.jpg",
+                "small_url": "https://comicvine.gamespot.com/api/image/scale_small/267292-796-120815-1-batman.jpg",
+                "super_url": "https://comicvine.gamespot.com/api/image/scale_large/267292-796-120815-1-batman.jpg",
+                "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/267292-796-120815-1-batman.jpg",
+                "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/267292-796-120815-1-batman.jpg"
+            },
+            "issue_number": "72",
+            "name": "The Jungle Batman!",
+            "volume": {
+                "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-796/",
+                "id": 796,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4050-796/"
+            },
+            "resource_type": "issue"
+        }
+    ],
+    "version": "1.0"
+}

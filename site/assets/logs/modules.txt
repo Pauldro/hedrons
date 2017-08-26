@@ -54,3 +54,28 @@
 2017-08-25 19:57:26	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/	Saved module info caches
 2017-08-25 19:57:31	superman	http://localhost/hedrons/manage/setup/modulesmanager/?reset=1	Saved module info caches
 2017-08-25 19:57:40	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503709060290	Saved module info caches
+2017-08-25 20:32:37	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_kixe_Audio_MP3_archive_master.zip&class=Audio_MP3&modal=1	Saved module info caches
+2017-08-25 20:32:38	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_kixe_Audio_MP3_archive_master.zip&class=Audio_MP3&modal=1	Saved module info caches
+2017-08-25 20:32:41	superman	http://localhost/hedrons/manage/module/?modal=1	Installed module 'Audio_MP3'
+2017-08-25 20:32:41	superman	http://localhost/hedrons/manage/module/?modal=1	Saved module info caches
+2017-08-25 20:32:54	superman	http://localhost/hedrons/manage/module/edit?name=Audio_MP3&collapse_info=1&modal=1	Saved module 'Audio_MP3' config data
+2017-08-25 20:32:58	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/	Saved module info caches
+2017-08-25 20:33:19	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_Hani79_Processwire_FieldType_Select_Drop_Down_archive_master.zip&class=FieldtypeSelect&modal=1	Saved module info caches
+2017-08-25 20:33:20	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_Hani79_Processwire_FieldType_Select_Drop_Down_archive_master.zip&class=FieldtypeSelect&modal=1	Saved module info caches
+2017-08-25 20:33:21	superman	http://localhost/hedrons/manage/module/?modal=1	Installed module 'FieldtypeSelect'
+2017-08-25 20:33:21	superman	http://localhost/hedrons/manage/module/?modal=1	Saved module info caches
+2017-08-25 20:33:22	superman	http://localhost/hedrons/manage/module/edit?name=FieldtypeSelect&collapse_info=1&modal=1	Saved module 'FieldtypeSelect' config data
+2017-08-25 20:33:24	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/	Saved module info caches
+2017-08-25 20:33:39	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_adrianbj_PageRenameOptions_archive_master.zip&class=PageRenameOptions&modal=1	Saved module info caches
+2017-08-25 20:33:40	superman	http://localhost/hedrons/manage/setup/modulesmanager/download/?url=https___github.com_adrianbj_PageRenameOptions_archive_master.zip&class=PageRenameOptions&modal=1	Saved module info caches
+2017-08-25 20:33:42	superman	http://localhost/hedrons/manage/module/?modal=1	Installed module 'PageRenameOptions'
+2017-08-25 20:33:42	superman	http://localhost/hedrons/manage/module/?modal=1	Saved module info caches
+2017-08-25 20:33:58	superman	http://localhost/hedrons/manage/module/edit?name=PageRenameOptions&collapse_info=1&modal=1	Saved module 'PageRenameOptions' config data
+2017-08-25 20:34:00	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/	Saved module info caches
+2017-08-25 20:55:39	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503712539108	Saved module info caches
+2017-08-25 20:56:26	superman	http://localhost/hedrons/manage/setup/modulesmanager/getdata/?_=1503712585788	Saved module info caches
+2017-08-25 22:06:40	superman	http://localhost/hedrons/manage/module/?reset=1	Saved module info caches
+2017-08-25 22:07:40	superman	http://localhost/hedrons/manage/module/	Installed module 'Pagesave'
+2017-08-25 22:07:40	superman	http://localhost/hedrons/manage/module/	Saved module info caches
+2017-08-25 22:07:42	superman	http://localhost/hedrons/manage/module/edit?name=Pagesave	Saved module 'Pagesave' config data
+2017-08-25 22:07:43	superman	http://localhost/hedrons/manage/module/edit?name=Pagesave&collapse_info=1	Saved module 'Pagesave' config data

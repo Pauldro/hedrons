@@ -1,0 +1,301 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "aliases": null,
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-120815/",
+        "character_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+                "id": 1699,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1691/",
+                "id": 1691,
+                "name": "Dick Grayson",
+                "site_detail_url": "https://comicvine.gamespot.com/dick-grayson/4005-1691/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-3727/",
+                "id": 3727,
+                "name": "James Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/james-gordon/4005-3727/"
+            }
+        ],
+        "character_died_in": [],
+        "concept_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-55886/",
+                "id": 55886,
+                "name": "Deathtrap",
+                "site_detail_url": "https://comicvine.gamespot.com/deathtrap/4015-55886/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-57110/",
+                "id": 57110,
+                "name": "Giant props",
+                "site_detail_url": "https://comicvine.gamespot.com/giant-props/4015-57110/"
+            }
+        ],
+        "cover_date": "1952-08-01",
+        "date_added": "2008-06-06 11:09:12",
+        "date_last_updated": "2017-04-12 11:12:12",
+        "deck": null,
+        "description": "<p>Stories:</p><ol><li><p>The Jungle Batman</p></li><li><p>The Legion Of Faceless Men</p></li><li><p>The Death-Cheaters Of Gotham City</p></li></ol>",
+        "first_appearance_characters": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+                "id": 1699,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1691/",
+                "id": 1691,
+                "name": "Dick Grayson",
+                "site_detail_url": "https://comicvine.gamespot.com/dick-grayson/4005-1691/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-3727/",
+                "id": 3727,
+                "name": "James Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/james-gordon/4005-3727/"
+            }
+        ],
+        "first_appearance_concepts": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-57110/",
+                "id": 57110,
+                "name": "Giant props",
+                "site_detail_url": "https://comicvine.gamespot.com/giant-props/4015-57110/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-55886/",
+                "id": 55886,
+                "name": "Deathtrap",
+                "site_detail_url": "https://comicvine.gamespot.com/deathtrap/4015-55886/"
+            }
+        ],
+        "first_appearance_locations": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-23611/",
+                "id": 23611,
+                "name": "Gotham City",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city/4020-23611/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-31340/",
+                "id": 31340,
+                "name": "Batcave",
+                "site_detail_url": "https://comicvine.gamespot.com/batcave/4020-31340/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-56201/",
+                "id": 56201,
+                "name": "Atlantic Ocean",
+                "site_detail_url": "https://comicvine.gamespot.com/atlantic-ocean/4020-56201/"
+            }
+        ],
+        "first_appearance_objects": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-55819/",
+                "id": 55819,
+                "name": "Bat-Signal",
+                "site_detail_url": "https://comicvine.gamespot.com/bat-signal/4055-55819/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-41463/",
+                "id": 41463,
+                "name": "Batmobile",
+                "site_detail_url": "https://comicvine.gamespot.com/batmobile/4055-41463/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-49918/",
+                "id": 49918,
+                "name": "Batplane",
+                "site_detail_url": "https://comicvine.gamespot.com/batplane/4055-49918/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-55745/",
+                "id": 55745,
+                "name": "Bat-Suit",
+                "site_detail_url": "https://comicvine.gamespot.com/bat-suit/4055-55745/"
+            }
+        ],
+        "first_appearance_storyarcs": null,
+        "first_appearance_teams": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-56496/",
+                "id": 56496,
+                "name": "Batman and Robin",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-and-robin/4060-56496/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-42090/",
+                "id": 42090,
+                "name": "Gotham City Police Department",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city-police-department/4060-42090/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-44418/",
+                "id": 44418,
+                "name": "United States Navy",
+                "site_detail_url": "https://comicvine.gamespot.com/united-states-navy/4060-44418/"
+            }
+        ],
+        "has_staff_review": false,
+        "id": 120815,
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/267292-796-120815-1-batman.jpg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/267292-796-120815-1-batman.jpg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/267292-796-120815-1-batman.jpg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/267292-796-120815-1-batman.jpg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/267292-796-120815-1-batman.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/267292-796-120815-1-batman.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/267292-796-120815-1-batman.jpg"
+        },
+        "issue_number": "72",
+        "location_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-56201/",
+                "id": 56201,
+                "name": "Atlantic Ocean",
+                "site_detail_url": "https://comicvine.gamespot.com/atlantic-ocean/4020-56201/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-31340/",
+                "id": 31340,
+                "name": "Batcave",
+                "site_detail_url": "https://comicvine.gamespot.com/batcave/4020-31340/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-23611/",
+                "id": 23611,
+                "name": "Gotham City",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city/4020-23611/"
+            }
+        ],
+        "name": "The Jungle Batman!",
+        "object_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-55819/",
+                "id": 55819,
+                "name": "Bat-Signal",
+                "site_detail_url": "https://comicvine.gamespot.com/bat-signal/4055-55819/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-55745/",
+                "id": 55745,
+                "name": "Bat-Suit",
+                "site_detail_url": "https://comicvine.gamespot.com/bat-suit/4055-55745/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-41463/",
+                "id": 41463,
+                "name": "Batmobile",
+                "site_detail_url": "https://comicvine.gamespot.com/batmobile/4055-41463/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-49918/",
+                "id": 49918,
+                "name": "Batplane",
+                "site_detail_url": "https://comicvine.gamespot.com/batplane/4055-49918/"
+            }
+        ],
+        "person_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-19137/",
+                "id": 19137,
+                "name": "Bob Kane",
+                "site_detail_url": "https://comicvine.gamespot.com/bob-kane/4040-19137/",
+                "role": "penciler"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-38494/",
+                "id": 38494,
+                "name": "Charles Paris",
+                "site_detail_url": "https://comicvine.gamespot.com/charles-paris/4040-38494/",
+                "role": "inker"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-55952/",
+                "id": 55952,
+                "name": "David V. Reed",
+                "site_detail_url": "https://comicvine.gamespot.com/david-v-reed/4040-55952/",
+                "role": "writer"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-47799/",
+                "id": 47799,
+                "name": "Dick Sprang",
+                "site_detail_url": "https://comicvine.gamespot.com/dick-sprang/4040-47799/",
+                "role": "artist"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-38286/",
+                "id": 38286,
+                "name": "Ira Schnapp",
+                "site_detail_url": "https://comicvine.gamespot.com/ira-schnapp/4040-38286/",
+                "role": "artist"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-62244/",
+                "id": 62244,
+                "name": "Pat Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/pat-gordon/4040-62244/",
+                "role": "colorist"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-1811/",
+                "id": 1811,
+                "name": "Whitney Ellsworth",
+                "site_detail_url": "https://comicvine.gamespot.com/whitney-ellsworth/4040-1811/",
+                "role": "editor"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-32572/",
+                "id": 32572,
+                "name": "Winslow Mortimer",
+                "site_detail_url": "https://comicvine.gamespot.com/winslow-mortimer/4040-32572/",
+                "role": "artist"
+            }
+        ],
+        "site_detail_url": "https://comicvine.gamespot.com/batman-72-the-jungle-batman/4000-120815/",
+        "store_date": "1952-06-11",
+        "story_arc_credits": [],
+        "team_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-56496/",
+                "id": 56496,
+                "name": "Batman and Robin",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-and-robin/4060-56496/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-42090/",
+                "id": 42090,
+                "name": "Gotham City Police Department",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city-police-department/4060-42090/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-44418/",
+                "id": 44418,
+                "name": "United States Navy",
+                "site_detail_url": "https://comicvine.gamespot.com/united-states-navy/4060-44418/"
+            }
+        ],
+        "team_disbanded_in": [],
+        "volume": {
+            "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-796/",
+            "id": 796,
+            "name": "Batman",
+            "site_detail_url": "https://comicvine.gamespot.com/batman/4050-796/"
+        }
+    },
+    "version": "1.0"
+}

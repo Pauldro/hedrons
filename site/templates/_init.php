@@ -10,8 +10,7 @@
  * we are using it just to include another file with shared functions.
  *
  */
-	require_once ($config->paths->templates.'classes/purl/vendor/autoload.php');
-  	require_once ($config->paths->templates.'classes/hedrons/ComicVineAPI.class.php');
+  	require_once ($config->paths->vendor.'hedrons/vendor/autoload.php');
 
 	include_once("./_func.php"); // include our shared functions
 
@@ -36,4 +35,4 @@
 	$config->scripts->append($config->urls->templates.'scripts/scripts.js');
 	$config->scripts->append('https://use.fontawesome.com/ba5b2370e2.js');
 
-	$setequalheights = array(); 
+	$setequalheights = array();

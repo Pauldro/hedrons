@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="container page">
-        <?php $comicvine = new ComicVineAPI(); ?>
+        <?php $comicvine = new Hedrons\ComicVineAPI(); ?>
         <?php $comicvine->debug = true; ?>
         <?php $results = $comicvine->searchforcomicissues('batman', 1, 10, false); ?>
         <div class="post-list">

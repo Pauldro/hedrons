@@ -1,0 +1,87 @@
+<?php namespace ProcessWire;
+
+/**
+ * ProcessWire 'Hello world' demonstration module
+ *
+ * Demonstrates the Module interface and how to add hooks.
+ *
+ * See README file for further links regarding module development.
+ *
+ * This file is licensed under the MIT license
+ * https://processwire.com/about/license/mit/
+ *
+ * ProcessWire 3.x, Copyright 2016 by Ryan Cramer
+ * https://processwire.com
+ *
+ */
+
+class Pagesave extends WireData implements Module {
+    public static function getModuleInfo() {
+		return array(
+			// The module's title, typically a little more descriptive than the class name
+			'title' => 'Page Save',
+			// version number
+			'version' => 1,
+			// summary is brief description of what this module is
+			'summary' => 'On page save do some actions on certain templates ',
+			// Optional URL to more information about the module
+			'href' => 'https://processwire.com',
+			// singular=true: indicates that only one instance of the module is allowed.
+			// This is usually what you want for modules that attach hooks.
+			'singular' => true,
+			// autoload=true: indicates the module should be started with ProcessWire.
+			// This is necessary for any modules that attach runtime hooks, otherwise those
+			// hooks won't get attached unless some other code calls the module on it's own.
+			// Note that autoload modules are almost always also 'singular' (seen above).
+			'autoload' => true,
+			// Optional font-awesome icon name, minus the 'fa-' part
+			'icon' => 'smile-o',
+        );
+    }
+
+    public function init() {
+        //$this->addHookAfter('Pages::save', $this, 'pageupdate');
+        $this->pages->addHookBefore('save', $this, 'pageupdate');
+    }
+
+    public function pageupdate($event) {
+        // in your function, first get the page with something like
+            $p = $event->arguments('page');      // depends on hooked method
+
+            if ($p->template == 'podcast-episode') {
+                $p = $this->createpodcastepisode($p);
+            }
+
+
+
+
+        // ready
+            $event->return = $p;
+	}
+
+    public function createpodcastepisode($p) {
+        // check to avoid endless loop
+            if ($p->skipMe) return;
+        // don't do it for videos that have already their unique id
+            if ($p->postnumber) return;
+        // Find the newest episode get its episode number and add 1
+            $id = intval(wire('pages')->get('/podcast/episodes/')->child("sort=-created")->postnumber) + 1;
+        // save this to the template field
+            $p->postnumber = $id;
+        // add this to avoid endless loop
+            $p->skipMe = true;
+
+        foreach ($p->podcasttopics as $podtopic) {
+            $page = new Page(); // create new page object
+            $page->template = 'podcast-episode'; // set template
+            $page->parent = wire('pages')->get('/podcast/episodes/'); // set the parent
+            $page->name = $sanitizer->pageName($topic, true);
+            $page->title = $sanitizer->text($topic); // set page title (not neccessary but recommended)
+            $page->save();
+            //$createdpages[] = $page->id;
+        }
+
+        return $p;
+    }
+
+}

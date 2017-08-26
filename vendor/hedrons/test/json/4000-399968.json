@@ -1,0 +1,135 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "aliases": null,
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-399968/",
+        "character_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+                "id": 1699,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-3727/",
+                "id": 3727,
+                "name": "James Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/james-gordon/4005-3727/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1702/",
+                "id": 1702,
+                "name": "Joker",
+                "site_detail_url": "https://comicvine.gamespot.com/joker/4005-1702/"
+            }
+        ],
+        "character_died_in": [],
+        "concept_credits": [],
+        "cover_date": "2012-07-31",
+        "date_added": "2013-04-29 15:44:49",
+        "date_last_updated": "2015-08-16 10:27:26",
+        "deck": null,
+        "description": "<p>Translates Detective Comics #1-2.</p><h4>List of Covers and their creators:</h4><table data-max-width=\"true\"><thead><tr><th scope=\"col\">Cover</th><th scope=\"col\">Name</th><th scope=\"col\">Creator(s)</th><th scope=\"col\">Sidebar Location</th></tr></thead><tbody><tr><td>Reg</td><td>Regular</td><td>Tony S. Daniel</td><td>1</td></tr><tr><td>Virgin</td><td>Virgin, Limited to 1,500</td><td>Tony S. Daniel</td><td>2</td></tr></tbody></table>",
+        "first_appearance_characters": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1702/",
+                "id": 1702,
+                "name": "Joker",
+                "site_detail_url": "https://comicvine.gamespot.com/joker/4005-1702/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+                "id": 1699,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-3727/",
+                "id": 3727,
+                "name": "James Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/james-gordon/4005-3727/"
+            }
+        ],
+        "first_appearance_concepts": null,
+        "first_appearance_locations": null,
+        "first_appearance_objects": null,
+        "first_appearance_storyarcs": null,
+        "first_appearance_teams": null,
+        "has_staff_review": false,
+        "id": 399968,
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/3014116-7536342555-BATMA.jpg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/3014116-7536342555-BATMA.jpg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/3014116-7536342555-BATMA.jpg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/3014116-7536342555-BATMA.jpg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/3014116-7536342555-BATMA.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/3014116-7536342555-BATMA.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/3014116-7536342555-BATMA.jpg"
+        },
+        "issue_number": "1",
+        "location_credits": [],
+        "name": "Batman",
+        "object_credits": [],
+        "person_credits": [
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-43265/",
+            "id": 43265,
+            "name": "Ryan Winn",
+            "site_detail_url": "https://comicvine.gamespot.com/ryan-winn/4040-43265/",
+            "role": "penciler"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-10568/",
+            "id": 10568,
+            "name": "Sandu Florea",
+            "site_detail_url": "https://comicvine.gamespot.com/sandu-florea/4040-10568/",
+            "role": "penciler"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-83554/",
+            "id": 83554,
+            "name": "Steve Kups",
+            "site_detail_url": "https://comicvine.gamespot.com/steve-kups/4040-83554/",
+            "role": "editor"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-57994/",
+            "id": 57994,
+            "name": "Tomeu Morey",
+            "site_detail_url": "https://comicvine.gamespot.com/tomeu-morey/4040-57994/",
+            "role": ""
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-4663/",
+            "id": 4663,
+            "name": "Tony Daniel",
+            "site_detail_url": "https://comicvine.gamespot.com/tony-daniel/4040-4663/",
+            "role": "writer, penciler"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-69227/",
+            "id": 69227,
+            "name": "Walproject",
+            "site_detail_url": "https://comicvine.gamespot.com/walproject/4040-69227/",
+            "role": "letterer"
+            }
+        ],
+        "site_detail_url": "https://comicvine.gamespot.com/batman-1-batman/4000-399968/",
+        "store_date": "2012-06-12",
+        "story_arc_credits": [],
+        "team_credits": [],
+        "team_disbanded_in": [],
+        "volume": {
+            "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-60760/",
+            "id": 60760,
+            "name": "Batman",
+            "site_detail_url": "https://comicvine.gamespot.com/batman/4050-60760/"
+        }
+    },
+    "version": "1.0"
+}

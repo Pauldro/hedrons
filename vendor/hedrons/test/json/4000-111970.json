@@ -1,0 +1,412 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "aliases": null,
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-111970/",
+        "character_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-86559/",
+                "id": 86559,
+                "name": "Alfred",
+                "site_detail_url": "https://comicvine.gamespot.com/alfred/4005-86559/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-5368/",
+                "id": 5368,
+                "name": "Barbara Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/barbara-gordon/4005-5368/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+                "id": 1699,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-42413/",
+                "id": 42413,
+                "name": "Damian Wayne",
+                "site_detail_url": "https://comicvine.gamespot.com/damian-wayne/4005-42413/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-66858/",
+                "id": 66858,
+                "name": "Flamingo",
+                "site_detail_url": "https://comicvine.gamespot.com/flamingo/4005-66858/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-86556/",
+                "id": 86556,
+                "name": "Jackanapes",
+                "site_detail_url": "https://comicvine.gamespot.com/jackanapes/4005-86556/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-79805/",
+                "id": 79805,
+                "name": "Max Roboto",
+                "site_detail_url": "https://comicvine.gamespot.com/max-roboto/4005-79805/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-25845/",
+                "id": 25845,
+                "name": "Michael Lane",
+                "site_detail_url": "https://comicvine.gamespot.com/michael-lane/4005-25845/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-64811/",
+                "id": 64811,
+                "name": "Phosphorus Rex",
+                "site_detail_url": "https://comicvine.gamespot.com/phosphorus-rex/4005-64811/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-62628/",
+                "id": 62628,
+                "name": "Professor Pyg",
+                "site_detail_url": "https://comicvine.gamespot.com/professor-pyg/4005-62628/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-4917/",
+                "id": 4917,
+                "name": "Talia al Ghul",
+                "site_detail_url": "https://comicvine.gamespot.com/talia-al-ghul/4005-4917/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-86569/",
+                "id": 86569,
+                "name": "The Weasel",
+                "site_detail_url": "https://comicvine.gamespot.com/the-weasel/4005-86569/"
+            }
+        ],
+        "character_died_in": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-25845/",
+                "id": 25845,
+                "name": "Michael Lane",
+                "site_detail_url": "https://comicvine.gamespot.com/michael-lane/4005-25845/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-62628/",
+                "id": 62628,
+                "name": "Professor Pyg",
+                "site_detail_url": "https://comicvine.gamespot.com/professor-pyg/4005-62628/"
+            }
+        ],
+        "concept_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-55694/",
+                "id": 55694,
+                "name": "End of the World",
+                "site_detail_url": "https://comicvine.gamespot.com/end-of-the-world/4015-55694/"
+            }
+        ],
+        "cover_date": "2007-07-01",
+        "date_added": "2008-06-06 11:09:17",
+        "date_last_updated": "2014-05-26 18:32:37",
+        "deck": null,
+        "description": "<p>Meet <a data-ref-id=\"4005-42413\" href=\"/damian-wayne/4005-42413/\">Damian Wayne</a>, the <a data-ref-id=\"4005-1699\" href=\"/batman/4005-1699/\">Batman</a> of Tomorrow in this special issue set 15 years from now in a nightmarish future <a data-ref-id=\"4020-23611\" href=\"/gotham-city/4020-23611/\">Gotham</a>! In a world torn apart by terrorism, plagues, rogue weather and bizarre super-crime, only 24 hours are left before the climactic battle of Armageddon — and only one man who might be able to stop it.</p><p>But will he?</p><p>The Son of the Bat meets the Prince of Darkness and the stage is set for the ultimate battle between evil and moral ambiguity. Can Damian make peace with his heritage to save the world? Find out in BATMAN #666, \"Numbers of the Beast.\"</p>",
+        "first_appearance_characters": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+                "id": 1699,
+                "name": "Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-4917/",
+                "id": 4917,
+                "name": "Talia al Ghul",
+                "site_detail_url": "https://comicvine.gamespot.com/talia-al-ghul/4005-4917/"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-42413/",
+            "id": 42413,
+            "name": "Damian Wayne",
+            "site_detail_url": "https://comicvine.gamespot.com/damian-wayne/4005-42413/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-5368/",
+                "id": 5368,
+                "name": "Barbara Gordon",
+                "site_detail_url": "https://comicvine.gamespot.com/barbara-gordon/4005-5368/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-64811/",
+                "id": 64811,
+                "name": "Phosphorus Rex",
+                "site_detail_url": "https://comicvine.gamespot.com/phosphorus-rex/4005-64811/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-66858/",
+                "id": 66858,
+                "name": "Flamingo",
+                "site_detail_url": "https://comicvine.gamespot.com/flamingo/4005-66858/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-62628/",
+                "id": 62628,
+                "name": "Professor Pyg",
+                "site_detail_url": "https://comicvine.gamespot.com/professor-pyg/4005-62628/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-25845/",
+                "id": 25845,
+                "name": "Michael Lane",
+                "site_detail_url": "https://comicvine.gamespot.com/michael-lane/4005-25845/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-79805/",
+                "id": 79805,
+                "name": "Max Roboto",
+                "site_detail_url": "https://comicvine.gamespot.com/max-roboto/4005-79805/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-86556/",
+                "id": 86556,
+                "name": "Jackanapes",
+                "site_detail_url": "https://comicvine.gamespot.com/jackanapes/4005-86556/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-86559/",
+                "id": 86559,
+                "name": "Alfred",
+                "site_detail_url": "https://comicvine.gamespot.com/alfred/4005-86559/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-86569/",
+                "id": 86569,
+                "name": "The Weasel",
+                "site_detail_url": "https://comicvine.gamespot.com/the-weasel/4005-86569/"
+            }
+        ],
+        "first_appearance_concepts": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-55694/",
+                "id": 55694,
+                "name": "End of the World",
+                "site_detail_url": "https://comicvine.gamespot.com/end-of-the-world/4015-55694/"
+            }
+        ],
+        "first_appearance_locations": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-31340/",
+                "id": 31340,
+                "name": "Batcave",
+                "site_detail_url": "https://comicvine.gamespot.com/batcave/4020-31340/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-23611/",
+                "id": 23611,
+                "name": "Gotham City",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city/4020-23611/"
+            }
+        ],
+        "first_appearance_objects": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-55745/",
+                "id": 55745,
+                "name": "Bat-Suit",
+                "site_detail_url": "https://comicvine.gamespot.com/bat-suit/4055-55745/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-46369/",
+                "id": 46369,
+                "name": "Utility Belt",
+                "site_detail_url": "https://comicvine.gamespot.com/utility-belt/4055-46369/"
+            }
+        ],
+        "first_appearance_storyarcs": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-52856/",
+                "id": 52856,
+                "name": "Batman & Son",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-son/4045-52856/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-52234/",
+                "id": 52234,
+                "name": "The Three Ghosts of Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/the-three-ghosts-of-batman/4045-52234/"
+            }
+        ],
+        "first_appearance_teams": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-56496/",
+                "id": 56496,
+                "name": "Batman and Robin",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-and-robin/4060-56496/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-42090/",
+                "id": 42090,
+                "name": "Gotham City Police Department",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city-police-department/4060-42090/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-9591/",
+                "id": 9591,
+                "name": "League of Assassins",
+                "site_detail_url": "https://comicvine.gamespot.com/league-of-assassins/4060-9591/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-60840/",
+                "id": 60840,
+                "name": "Dollotrons ",
+                "site_detail_url": "https://comicvine.gamespot.com/dollotrons/4060-60840/"
+            }
+        ],
+        "has_staff_review": false,
+        "id": 111970,
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/1973911-batman__1940__666.jpeg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/1973911-batman__1940__666.jpeg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/1973911-batman__1940__666.jpeg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/1973911-batman__1940__666.jpeg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/1973911-batman__1940__666.jpeg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/1973911-batman__1940__666.jpeg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/1973911-batman__1940__666.jpeg"
+        },
+        "issue_number": "666",
+        "location_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-31340/",
+                "id": 31340,
+                "name": "Batcave",
+                "site_detail_url": "https://comicvine.gamespot.com/batcave/4020-31340/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/location/4020-23611/",
+                "id": 23611,
+                "name": "Gotham City",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city/4020-23611/"
+            }
+        ],
+        "name": "Batman in Bethlehem",
+        "object_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-55745/",
+                "id": 55745,
+                "name": "Bat-Suit",
+                "site_detail_url": "https://comicvine.gamespot.com/bat-suit/4055-55745/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-46369/",
+                "id": 46369,
+                "name": "Utility Belt",
+                "site_detail_url": "https://comicvine.gamespot.com/utility-belt/4055-46369/"
+            }
+        ],
+        "person_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-8472/",
+                "id": 8472,
+                "name": "Andy Kubert",
+                "site_detail_url": "https://comicvine.gamespot.com/andy-kubert/4040-8472/",
+                "role": "artist, penciler, cover"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-51584/",
+                "id": 51584,
+                "name": "Dan DiDio",
+                "site_detail_url": "https://comicvine.gamespot.com/dan-didio/4040-51584/",
+                "role": "editor"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-40434/",
+                "id": 40434,
+                "name": "Grant Morrison",
+                "site_detail_url": "https://comicvine.gamespot.com/grant-morrison/4040-40434/",
+                "role": "writer"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-4844/",
+                "id": 4844,
+                "name": "Guy Major",
+                "site_detail_url": "https://comicvine.gamespot.com/guy-major/4040-4844/",
+                "role": "colorist"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-42881/",
+            "id": 42881,
+            "name": "Jared K. Fletcher",
+            "site_detail_url": "https://comicvine.gamespot.com/jared-k-fletcher/4040-42881/",
+            "role": "letterer"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-45035/",
+                "id": 45035,
+                "name": "Jeanine Schaefer",
+                "site_detail_url": "https://comicvine.gamespot.com/jeanine-schaefer/4040-45035/",
+                "role": "editor"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-14201/",
+                "id": 14201,
+                "name": "Jesse Delperdang",
+                "site_detail_url": "https://comicvine.gamespot.com/jesse-delperdang/4040-14201/",
+                "role": "inker"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-41024/",
+                "id": 41024,
+                "name": "Mike Marts",
+                "site_detail_url": "https://comicvine.gamespot.com/mike-marts/4040-41024/",
+                "role": "editor"
+            }
+        ],
+        "site_detail_url": "https://comicvine.gamespot.com/batman-666-batman-in-bethlehem/4000-111970/",
+        "store_date": "2007-07-25",
+        "story_arc_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-52856/",
+                "id": 52856,
+                "name": "Batman & Son",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-son/4045-52856/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/story_arc/4045-52234/",
+                "id": 52234,
+                "name": "The Three Ghosts of Batman",
+                "site_detail_url": "https://comicvine.gamespot.com/the-three-ghosts-of-batman/4045-52234/"
+            }
+        ],
+        "team_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-56496/",
+                "id": 56496,
+                "name": "Batman and Robin",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-and-robin/4060-56496/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-60840/",
+                "id": 60840,
+                "name": "Dollotrons ",
+                "site_detail_url": "https://comicvine.gamespot.com/dollotrons/4060-60840/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-42090/",
+                "id": 42090,
+                "name": "Gotham City Police Department",
+                "site_detail_url": "https://comicvine.gamespot.com/gotham-city-police-department/4060-42090/"
+            },
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-9591/",
+                "id": 9591,
+                "name": "League of Assassins",
+                "site_detail_url": "https://comicvine.gamespot.com/league-of-assassins/4060-9591/"
+            }
+        ],
+        "team_disbanded_in": [],
+        "volume": {
+            "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-796/",
+            "id": 796,
+            "name": "Batman",
+            "site_detail_url": "https://comicvine.gamespot.com/batman/4050-796/"
+        }
+    },
+    "version": "1.0"
+}

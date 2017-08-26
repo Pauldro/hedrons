@@ -1,0 +1,122 @@
+{
+    "error": "OK",
+    "limit": 1,
+    "offset": 0,
+    "number_of_page_results": 1,
+    "number_of_total_results": 1,
+    "status_code": 1,
+    "results": {
+        "aliases": null,
+        "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-607132/",
+        "character_credits": [
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+            "id": 1699,
+            "name": "Batman",
+            "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1691/",
+            "id": 1691,
+            "name": "Dick Grayson",
+            "site_detail_url": "https://comicvine.gamespot.com/dick-grayson/4005-1691/"
+            }
+        ],
+        "character_died_in": [],
+        "concept_credits": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-56462/",
+                "id": 56462,
+                "name": "Earth-2",
+                "site_detail_url": "https://comicvine.gamespot.com/earth-2/4015-56462/"
+            }
+        ],
+        "cover_date": null,
+        "date_added": "2017-07-06 17:34:37",
+        "date_last_updated": "2017-07-06 17:39:03",
+        "deck": null,
+        "description": null,
+        "first_appearance_characters": [
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1691/",
+            "id": 1691,
+            "name": "Dick Grayson",
+            "site_detail_url": "https://comicvine.gamespot.com/dick-grayson/4005-1691/"
+            },
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/character/4005-1699/",
+            "id": 1699,
+            "name": "Batman",
+            "site_detail_url": "https://comicvine.gamespot.com/batman/4005-1699/"
+            }
+        ],
+        "first_appearance_concepts": [
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/concept/4015-56462/",
+            "id": 56462,
+            "name": "Earth-2",
+            "site_detail_url": "https://comicvine.gamespot.com/earth-2/4015-56462/"
+            }
+        ],
+        "first_appearance_locations": null,
+        "first_appearance_objects": [
+        {
+            "api_detail_url": "https://comicvine.gamespot.com/api/thing/4055-41463/",
+            "id": 41463,
+            "name": "Batmobile",
+            "site_detail_url": "https://comicvine.gamespot.com/batmobile/4055-41463/"
+        }
+        ],
+        "first_appearance_storyarcs": null,
+        "first_appearance_teams": [
+            {
+                "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-56496/",
+                "id": 56496,
+                "name": "Batman and Robin",
+                "site_detail_url": "https://comicvine.gamespot.com/batman-and-robin/4060-56496/"
+            }
+        ],
+        "has_staff_review": false,
+        "id": 607132,
+        "image": {
+            "icon_url": "https://comicvine.gamespot.com/api/image/square_avatar/5941231-bat7.jpg",
+            "medium_url": "https://comicvine.gamespot.com/api/image/scale_medium/5941231-bat7.jpg",
+            "screen_url": "https://comicvine.gamespot.com/api/image/screen_medium/5941231-bat7.jpg",
+            "small_url": "https://comicvine.gamespot.com/api/image/scale_small/5941231-bat7.jpg",
+            "super_url": "https://comicvine.gamespot.com/api/image/scale_large/5941231-bat7.jpg",
+            "thumb_url": "https://comicvine.gamespot.com/api/image/scale_avatar/5941231-bat7.jpg",
+            "tiny_url": "https://comicvine.gamespot.com/api/image/square_mini/5941231-bat7.jpg"
+        },
+        "issue_number": "7",
+        "location_credits": [],
+        "name": "Batman & batman",
+        "object_credits": [
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/object/4055-41463/",
+            "id": 41463,
+            "name": "Batmobile",
+            "site_detail_url": "https://comicvine.gamespot.com/batmobile/4055-41463/"
+            }
+        ],
+        "person_credits": [],
+        "site_detail_url": "https://comicvine.gamespot.com/batman-presents-7-batman-and-batman/4000-607132/",
+        "store_date": null,
+        "story_arc_credits": [],
+        "team_credits": [
+            {
+            "api_detail_url": "https://comicvine.gamespot.com/api/team/4060-56496/",
+            "id": 56496,
+            "name": "Batman and Robin",
+            "site_detail_url": "https://comicvine.gamespot.com/batman-and-robin/4060-56496/"
+            }
+        ],
+        "team_disbanded_in": [],
+        "volume": {
+            "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-97868/",
+            "id": 97868,
+            "name": "Batman Presents",
+            "site_detail_url": "https://comicvine.gamespot.com/batman-presents/4050-97868/"
+        }
+    },
+    "version": "1.0"
+}
