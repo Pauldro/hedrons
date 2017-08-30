@@ -5909,10 +5909,12 @@ button.close {
 }
 .modal-header .close {
   margin-top: -2px;
+  color: #808080;
 }
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
+  color: #808080;
 }
 .modal-body {
   position: relative;

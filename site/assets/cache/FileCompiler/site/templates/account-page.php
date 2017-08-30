@@ -1,7 +1,7 @@
 <?php
     if (!$user->isLoggedin()) {
         // user is already logged in, so they don't need to be here
-        $session->redirect($config->pages->login);
+        //$session->redirect($config->pages->login);
     }
 
 ?>

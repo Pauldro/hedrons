@@ -12,8 +12,9 @@
                 <p class="visible-md-inline-block"> MD </p> <p class="visible-lg-inline-block"> LG </p>
             </div>
         </footer>
-        <?php foreach($config->scripts->unique() as $script) : ?>
-        	<script src="<?php echo $script; ?>"></script>
+		<?php include $config->paths->content.'common/modals/ajax-modal.php'; ?>
+        <?php foreach ($config->scripts->unique() as $script) : ?>
+        	<script src="<?= $script; ?>"></script>
         <?php endforeach; ?>
 		<?php include $config->paths->content.'common/phpjs/setequalheight.js.php'; ?>
     </body>

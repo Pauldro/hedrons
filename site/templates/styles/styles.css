@@ -42,6 +42,8 @@
 	.btn-navbar {color: #333; background-color: gray; border-color: transparent;}
 	.list-unstyled .list-unstyled {margin-left: 15px;}
 	.nav > li > a:hover, .nav > li > a:focus {background: #9b51b8; color: #f5f1ed;}
+
+	.modal label {color: #f5f1ed;}
 /*==============================================================
    SITE STYLES
  =============================================================*/

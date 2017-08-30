@@ -29,8 +29,25 @@ $(function() {
 			$('.close-menu').hide();
 			$('#nav-bkgd').remove();
 		});
+
+		/*==============================================================
+		   AJAX
+		=============================================================*/
+		$("body").on("click", ".load-into-modal", function(e) {
+			e.preventDefault();
+			var button = $(this);
+			var ajaxloader = new ajaxloadedmodal(button);
+			$(this).closest('.modal').modal('hide');
+			ajaxloader.url = URI(ajaxloader.url).addQuery('modal', 'modal').normalizeQuery().toString();
+			$(ajaxloader.loadinto).loadin(ajaxloader.url, function() {
+				$(ajaxloader.modal).resizemodal(ajaxloader.modalsize).modal();
+			});
+		});
 });
 
+/*==============================================================
+   CONTENT
+=============================================================*/
 function duplicateelement(element, appendto) {
 	var input = $(element).first().clone().find("input:text").val("").end().appendTo(appendto);
 }
@@ -39,8 +56,43 @@ function setequalheight(container) {
 	var height = 0;
 	$(container).each(function() {
 		if ($(this).actual( 'height' ) > height) {
-			height = $(this).actual( 'height' );
+			height = $(this).actual('height');
 		}
 	});
 	$(container).height(height);
 }
+
+/*==============================================================
+   AJAX FUNCTIONS
+=============================================================*/
+$.fn.extend({
+	loadin: function(href, callback) {
+		var element = $(this);
+		var parent = element.parent();
+		console.log('loading ' + element.returnelementdescription() + " from " + href);
+		parent.load(href, function() { callback(); });
+	},
+	returnelementdescription: function() {
+		var element = $(this);
+		var tag = element[0].tagName.toLowerCase();
+		var classes = element.attr('class').replace(' ', '.');
+		var id = element.attr('id');
+		var string = tag;
+		if (classes) { if (classes.length) { string += '.' + classes; } }
+		if (id) { if (id.length) { string += '#'+id; } }
+		return string;
+	},
+
+	resizemodal: function (size) {
+		$(this).children('.modal-dialog').removeClass('modal-xl').removeClass('modal-lg').removeClass('modal-sm').removeClass('modal-md').removeClass('modal-xs').addClass('modal-'+size);
+		return $(this);
+	},
+	// CONTENT FUNCTIONS
+	animatecss: function (animationName) {
+		var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+		this.addClass('animated ' + animationName).one(animationEnd, function() {
+			$(this).removeClass('animated ' + animationName);
+		});
+		return $(this);
+	}
+});

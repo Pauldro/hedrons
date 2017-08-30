@@ -31,7 +31,9 @@
 	$config->scripts->append($config->urls->templates.'scripts/bootstrap.min.js');
 	$config->scripts->append($config->urls->templates.'scripts/libs/datatables.js');
 	$config->scripts->append($config->urls->templates.'scripts/libs/jquery-actual.js');
+    $config->scripts->append($config->urls->templates.'scripts/libs/uri.js');
 	//$config->scripts->append($config->urls->templates.'scripts/libraries.js');
+	$config->scripts->append($config->urls->templates.'scripts/classes.js');
 	$config->scripts->append($config->urls->templates.'scripts/scripts.js');
 	$config->scripts->append('https://use.fontawesome.com/ba5b2370e2.js');
 

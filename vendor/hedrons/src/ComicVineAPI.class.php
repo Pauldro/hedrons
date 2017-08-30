@@ -88,9 +88,7 @@
 
         public function returnresult($url, $returnjson) {
             $result = ($this->debug ? file_get_contents($url) : $this->curlrequest($url));
-
             return ($returnjson ? $result : json_decode($result, true));
-
         }
 
 

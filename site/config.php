@@ -100,3 +100,10 @@ $config->installed = 1503624754;
  *
  */
 $config->httpHosts = array('localhost');
+
+$config->pages = new Paths($rootURL);
+$config->pages->index = $config->urls->root;
+$config->pages->account = $config->urls->root . 'user/account/';
+$config->pages->login = $config->urls->root . 'user/account/login/';
+$config->pages->podcast = $config->urls->root . 'podcasts/';
+$config->pages->ajax = $config->urls->root . 'ajax/';
