@@ -27,8 +27,27 @@
         </div>
         <?php include $config->paths->content.'podcast/podcast-episode-player.php'; ?>
         <br>
-        <?php foreach ($page->podcasttopics as $podtopic) : ?>
-            <p><?= $podtopic->title; ?></p>
-        <?php endforeach; ?>
+        <h3>Podcast Topics</h3>
+        <div class="row">
+            <div class="col-sm-4">
+                <table class="table table-condensed thead-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($page->podcast_topics as $podtopic) : ?>
+                            <tr>
+                                <td><?= $podtopic->index(); ?></td>
+                                <td><?= $podtopic->title; ?></td>
+                            </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
     </div>
 <?php include('./_foot.php'); // include footer markup ?>
