@@ -22,6 +22,7 @@ class ComposerStaticInitf05a4f7cf50f7b200247cf2fc06debc2
 
     public static $classMap = array (
         'Hedrons\\ComicVineAPI' => __DIR__ . '/../..' . '/src/ComicVineAPI.class.php',
+        'Hedrons\\TMDBapi' => __DIR__ . '/../..' . '/src/TMDB.class.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

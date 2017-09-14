@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Hedrons\\ComicVineAPI' => $baseDir . '/src/ComicVineAPI.class.php',
+    'Hedrons\\TMDBapi' => $baseDir . '/src/TMDB.class.php',
 );
