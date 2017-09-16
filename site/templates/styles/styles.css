@@ -44,6 +44,12 @@
 	.nav > li > a:hover, .nav > li > a:focus {background: #9b51b8; color: #f5f1ed;}
 
 	.modal label {color: #f5f1ed;}
+
+	table.thead-bordered thead th {border-bottom: 2px solid #ddd;}
+
+	.avatar-image {border: 3px solid #333;}
+
+	.pw-modal-window {width: 80% !important;}
 /*==============================================================
    SITE STYLES
  =============================================================*/
