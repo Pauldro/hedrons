@@ -50,7 +50,27 @@
             }
         }
 
-        public function getmovieimageurl($image, $imagesize) {
+        public function getsearchtvurl($query, $page) {
+            if ($this->debug) {
+                //return \ProcessWire\wire('config')->paths->vendor.'hedrons/test/json/issues-search.json';
+            } else {
+                $url = $this->makeurlparser();
+                $url->path->add($this->path['searchprefix']);
+                $url->path->add($this->path['search']);
+                $url->path->add($this->path['tv']);
+                $url->query->setData(
+                    array(
+                        'api_key' => $this->v3token,
+                        'language' => 'en-US',
+                        'query' => $query,
+                        '[age]' => $page,
+                    )
+                );
+                return $url->getUrl();
+            }
+        }
+
+        public function getimageurl($image, $imagesize) {
             $url = $this->makeurlparser($this->imageurl);
             $url->path->add($imagesize);
             $url->path->add($image);
@@ -61,6 +81,12 @@
             $url = $this->getsearchmoviesurl($query, $page);
             return $this->returnresult($url, $returnjson);
         }
+
+        public function searchfortv($query, $page, $returnjson = false) {
+            $url = $this->getsearchtvurl($query, $page);
+            return $this->returnresult($url, $returnjson);
+        }
+
 
         public function curlrequest($url) {
             //  Initiate curl
