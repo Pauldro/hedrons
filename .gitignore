@@ -5,3 +5,4 @@ site/assets/files/**
 site/assets/logs/**
 site/assets/sessions/**
 !site/assets/**/.*
+site/templates/test.php
