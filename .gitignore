@@ -6,3 +6,4 @@ site/assets/logs/image-sizer.txt
 site/assets/logs/modules.txt
 site/assets/logs/session.txt
 site/templates/test.php
+site/assets/cache
