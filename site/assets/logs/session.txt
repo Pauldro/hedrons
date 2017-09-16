@@ -1,5 +1,0 @@
-2017-08-24 20:33:04	superman	http://localhost/hedrons/manage/login/	Successful login for 'superman'
-2017-08-25 19:56:57	guest	http://localhost/hedrons/manage/login/	Error: Failed login for 'rcapsys' - Unknown user: rcapsys
-2017-08-25 19:57:03	superman	http://localhost/hedrons/manage/login/	Successful login for 'superman'
-2017-08-26 01:11:01	superman	http://localhost/hedrons/manage/login/	Successful login for 'superman'
-2017-08-29 22:33:08	superman	http://localhost/hedrons/manage/login/	Successful login for 'superman'

@@ -1,4 +1,0 @@
-2017-08-25 20:45:36	superman	http://localhost/hedrons/manage/setup/field/send-templates-save?id=82	Deleted field "sidebar" data in 1 row(s) from 1 page(s). [page-by-page] (Fields)
-2017-08-25 20:45:36	superman	http://localhost/hedrons/manage/setup/field/send-templates-save?id=82	Deleted field "sidebar" data in 1 row(s) from 1 page(s). [page-by-page] (Fields)
-2017-08-29 23:53:50	superman	http://localhost/hedrons/manage/setup/field/send-templates-save?id=105	Deleted field "podcasttopics" data in 1 row(s) from 1 page(s). [page-by-page] (Fields)
-2017-08-29 23:58:55	superman	http://localhost/hedrons/manage/setup/field/send-templates-save?id=97	Deleted field "audio" data in 1 row(s) from 1 page(s). [page-by-page] (Fields)
