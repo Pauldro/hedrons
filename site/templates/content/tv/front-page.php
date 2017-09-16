@@ -1,6 +1,7 @@
 <?php $posts = $page->find("parent=$page->children"); $post = $posts->shift() ?>
 <div class="row">
     <div class="col-sm-9">
+        <?php include $config->paths->content.'tv/tv-search-form.php'; ?>
         <div class="row form-group post-list">
             <div class="col-xs-12 form-group post">
                 <?php include $config->paths->content.'posts/list-post.php'; ?>
