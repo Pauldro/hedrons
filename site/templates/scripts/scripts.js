@@ -43,6 +43,17 @@ $(function() {
 				$(ajaxloader.modal).resizemodal(ajaxloader.modalsize).modal();
 			});
 		});
+		/*==============================================================
+		  FORM FUNCTIONS
+		=============================================================*/
+			$("body").on("click", ".dropdown-menu .searchfilter", function(e) {
+				e.preventDefault();
+				var inputgroup = $(this).closest('.input-group');
+				var param = $(this).attr("href").replace("#","");
+				var concept = $(this).text();
+				inputgroup.find('span.showfilter').text(concept);
+				inputgroup.find('.search_param').val(param);
+			});
 });
 
 /*==============================================================
