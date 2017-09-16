@@ -1,0 +1,8 @@
+site/assets/logs/modules.txt
+site/assets/logs/errors.txt
+site/assets/logs/exceptions.txt
+site/assets/logs/file-compiler.txt
+site/assets/logs/image-sizer.txt
+site/assets/logs/modules.txt
+site/assets/logs/session.txt
+site/templates/test.php
