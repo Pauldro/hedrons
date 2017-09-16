@@ -4010,17 +4010,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  /* border: 1px solid transparent; */
+  background: #9b51b8;
+  color: #f5f1ed;
+  border: 1px solid #9b51b8;
+  border-bottom-color: transparent;
   border-radius: 0 0 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #333333 #333333 transparent;
+  /* border-color: #333333 #333333 transparent; */
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    background: #9b51b8;
-    color: #f5f1ed;
+    background: #f5f1ed;
+    color: #333333;
     border-bottom-color: transparent;
     cursor: default;
 }
@@ -6901,7 +6904,7 @@ label,
   border-color: transparent;
 }
 .nav-tabs > li > a {
-  color: #333333;
+  /* color: #333333; */
 }
 .nav-pills > li > a {
   color: #333333;
