@@ -13,6 +13,7 @@
         <?php foreach($config->styles->unique() as $css) : ?>
         	<link rel="stylesheet" type="text/css" href="<?php echo $css; ?>" />
         <?php endforeach; ?>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 	</head>

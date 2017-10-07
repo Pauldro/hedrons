@@ -1,7 +1,5 @@
 <?php
     $writers = ''; $artists = '';
-    $setequalheights[] = '.post .post-title p';
-    $setequalheights[] = '.post .post-title h4';
 ?>
 <div>
     <div class="img-header text-center" style="border-top 1px solid black; border-color: <?= $page->pagetitlecolor; ?>">
@@ -21,5 +19,6 @@
         <?php endforeach; ?>
         <p class="small"><b>Writer(s): </b><?= rtrim($writers,', '); ?></p>
         <p class="small"><b>Artists(s): </b><?= rtrim($artists,', '); ?></p>
+        <button class="btn btn-sm btn-primary show-btn-text"><i class="fa fa-plus" aria-hidden="true"></i> <span class="hidden-btn-text">Add comic to your shelf</span></button>
     </div>
 </div>

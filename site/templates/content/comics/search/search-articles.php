@@ -2,7 +2,7 @@
     // Search the title and body fields for our query text.
     // Limit the results to 50 pages.
     $selector = "title|body~=$q, limit=50";
-    $selector .= ", parent=".$pages->get('/tv/articles/');
+    $selector .= ", parent=".$pages->get('/comics/articles/');
 
     // Find pages that match the selector
     $matches = $pages->find($selector);

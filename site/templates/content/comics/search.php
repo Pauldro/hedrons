@@ -1,20 +1,20 @@
 <?php
     $activetab = 'articles';
     $tabs = array(
-        'articles' => array('href' => 'articles', "id" => 'articles-link', 'text' => 'Articles', 'tabcontent' => 'tv/search/search-articles.php')
+        'articles' => array('href' => 'articles', "id" => 'articles-link', 'text' => 'Articles', 'tabcontent' => 'comics/search/search-articles.php')
     );
     if ($input->get->q) {
         if ($input->get->searchtype) {
             $activetab = $input->get->text('searchtype');
             if ($searchtype = 'shows') {
-                $tabs['shows'] = array('href' => 'shows', "id" => 'shows-link', 'text' => 'Shows', 'tabcontent' => 'tv/search/search-shows.php');
+                $tabs['comics'] = array('href' => 'comics', "id" => 'comics-link', 'text' => 'Comics', 'tabcontent' => 'comics/search/search-comics.php');
             }
         }
     }
 ?>
 <div class="row">
     <div class="col-sm-9">
-        <?php include $config->paths->content.'tv/tv-search-form.php'; ?>
+        <?php include $config->paths->content.'comics/search/form.php'; ?>
         <ul id="order-tab" class="nav nav-tabs nav_tabs" role="tablist">
             <?php foreach ($tabs as $tab) : ?>
                 <?php if ($tab == $tabs[$activetab]) : ?>

@@ -54,6 +54,14 @@ $(function() {
 				inputgroup.find('span.showfilter').text(concept);
 				inputgroup.find('.search_param').val(param);
 			});
+
+		$(".show-btn-text").mouseover(function() {
+			$(this).addClass('cssanimation leFadeInLeft');
+        	$(this).find('.hidden-btn-text').fadeIn();
+        });
+        $(".show-btn-text").mouseleave(function() {
+        	$(this).find('.hidden-btn-text').fadeOut().removeClass('cssanimation leFadeInRight');
+        });
 });
 
 /*==============================================================
